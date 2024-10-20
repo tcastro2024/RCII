@@ -16,7 +16,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 
-namespace Aula_1___Variaveis__tipos_de_dados_e_operadores
+namespace Aula_2___Variaveis__tipos_de_dados_e_operadores
 {
 
     /// <summary>
