@@ -65,39 +65,68 @@ namespace Aula_3___Estruturas_de_controlo
             //neutra(pH = 7)
             //ou alcalina(pH> 7) (for).
 
-            int qtdPh;
-            double ph;
+            //int qtdPh;
+            //double ph;
 
-            Console.WriteLine("Qtd de ph's: ");
-            qtdPh = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Qtd de ph's: ");
+            //qtdPh = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= qtdPh; i++)
+            //for (int i = 1; i <= qtdPh; i++)
+            //{
+            //    //Console.Write("\nSolução de Ph {0}", i); //Placeholder
+            //    //Console.Write($"\nSolução de Ph {i}"); // Interpolada
+            //    Console.Write("\nSolução de Ph " + i +": "); // Concatenação
+            //    ph = double.Parse(Console.ReadLine());
+
+            //    if (ph < 7)
+            //    {
+            //        Console.Write("\nPh com o valor " + ph + " é acido.");
+            //    }
+            //    else if (ph == 7)
+            //    {
+            //        Console.Write("\nPh com o valor " + ph + " é neutro.");
+            //    }
+            //    else
+            //    {
+            //        Console.Write("\nPh com o valor " + ph + " é alcalina.");
+            //    }
+            //    //else if (ph > 7) //podia-se colocar em vez do else
+            //    //{
+
+            //    //}
+            //}
+
+            //3 - Leia o número de golos marcados por uma equipa de futebol em
+            //um numero desconhecido de jogos  e no final mostre a média de golos por jogo(while).
+
+            int qtdGolos = 0, contadorQtdJogos = 0, somaGolos = 0;
+            double media = 0.0;
+
+            while(qtdGolos != -1 )
             {
-                //Console.Write("\nSolução de Ph {0}", i); //Placeholder
-                //Console.Write($"\nSolução de Ph {i}"); // Interpolada
-                Console.Write("\nSolução de Ph " + i +": "); // Concatenação
-                ph = double.Parse(Console.ReadLine());
+                // 1º 3 , 2º 7; 3º 0; 4º -1
+                Console.Write("\nQtd de golos ou -1 para terminar: ");
+                qtdGolos = int.Parse(Console.ReadLine());
 
-                if (ph < 7)
+                //if (qtdGolos == -1)
+                //    break;
+                
+                if( qtdGolos != -1 )
                 {
-                    Console.Write("\nPh com o valor " + ph + " é acido.");
-                }
-                else if (ph == 7)
-                {
-                    Console.Write("\nPh com o valor " + ph + " é neutro.");
-                }
-                else
-                {
-                    Console.Write("\nPh com o valor " + ph + " é alcalina.");
-                }
-                //else if (ph > 7) //podia-se colocar em vez do else
-                //{
+                    somaGolos = somaGolos + qtdGolos;
+                    //somaGolos += qtdGolos;         
 
-                //}
+                    contadorQtdJogos++;
+                }
             }
 
+            //somadeGolos 10
+            //qtdGolos 3
+            //media 3,3
+            media = (double) somaGolos / contadorQtdJogos;
 
-                //    //3 - Leia o número de golos marcados por uma equipa de futebol em um numero desconhecido de jogos  e no final mostre a média de golos por jogo(while).
+            Console.Write("\nMedia de golos: " + Math.Round(media, 1));
+
 
                 //    //4 - Escreva um programa para o utilizador digitar um número entre 1 e 12.Utilizando o switch...case exiba por extenso o mês do ano correspondente a cada número(por exemplo: caso o utilizador digite, 1 deverá exibir “Janeiro”, 2 deverá exibir “Fevereiro”, e assim sucessivamente).
 
