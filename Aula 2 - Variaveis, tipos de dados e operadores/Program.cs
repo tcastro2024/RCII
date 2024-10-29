@@ -28,12 +28,99 @@ namespace Aula_2___Variaveis__tipos_de_dados_e_operadores
     /// <example></example>
     class Program
     {
-        static void Main(string[] args)
-        {
+        /// <summary>
+        /// Defines the entry point of the application.
+        /// </summary>
+        /// <param name="args">The arguments.</param>
+        static void Main(string[] args)     {
+            #region Verificação
+
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+            Console.Write("teste");
+
+            #endregion
+
             #region Exercício:1 - aula 2
 
             ////Para se poder escrever o símbolo € na consola
-            //Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             //string produtoTec = "Computador";
             //string produtoTec2 = "Ecrã";
@@ -59,19 +146,48 @@ namespace Aula_2___Variaveis__tipos_de_dados_e_operadores
             #endregion
 
             #region Exercício:2 - aula 2
+
+            // birthday
             string nome;
-            int qtdQuartos, idade;
+            int qtdQuartos, idade, birthday;
             double preco;
 
             Console.Write("Nome completo: ");
             nome = Console.ReadLine();
 
+            
             Console.Write("Quantidade de quartos: ");
             qtdQuartos = int.Parse(Console.ReadLine());
 
+            Console.Write($"\nNome: {nome}");
+            Console.Write($"\nQtd de quartos: {qtdQuartos}");
+
+            // área = (base x altura) / 2
+
+            double base1, altura, area;
+
+            Console.Write("Base: ");
+            base1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Altura: ");
+            altura = double.Parse(Console.ReadLine());
+
+            area = (base1 * altura) / 2;
+
+            Console.Write("Area:" + Math.Round(area,3)); //Concatenação
+            Console.Write($"Area: {area:F3}"); //Interpolada
+            Console.Write("Area: {0}", Math.Round(area, 3)); //Placeholder
+
+            //
+            /*
+             * 
+             */
 
 
             #endregion
+
+
+
 
             //Pausa
             Console.ReadKey();
