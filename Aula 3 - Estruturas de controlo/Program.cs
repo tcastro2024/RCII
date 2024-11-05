@@ -254,6 +254,12 @@ namespace Aula_3___Estruturas_de_controlo
                 //i = 1
             }
 
+            //somadeGolos 10
+            //qtdGolos 3
+            //media 3,3
+            media = (double) somaGolos / contadorQtdJogos;
+
+            Console.Write("\nMedia de golos: " + Math.Round(media, 1));
 
             Console.write("Digite uma nota de programacao: ");
             //texto = "15" -> double = 15.0
