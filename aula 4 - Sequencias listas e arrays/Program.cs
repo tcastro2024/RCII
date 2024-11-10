@@ -21,14 +21,8 @@ namespace aula_4___Sequencias_listas_e_arrays
             // Array estatico que informa o computador
             // para guardar 4 espaços em memoria 
             // para 4 número inteiros
-            //int qtd = 0;
             //int[] scores;
-
             //double[] listaDeAlturas = new double[qtd];
-            //double media = 0.0, somaAlturas = 0.0;
-
-
-
 
             //scores = new int[8];
             //scores = new int[] { 1, 2, 3, 4, 5 };
@@ -44,14 +38,23 @@ namespace aula_4___Sequencias_listas_e_arrays
             //// ...
             //listaDeAlturas[4] = 1.78;
 
-            //OBJETIVO MEDIA DE ALTURAS
+            ////OBJETIVO MEDIA DE ALTURAS
 
-            //for (int i = 0; i < listaDeAlturas.Length; i++)
+            //int qtdAlturas = 0;
+
+            //double media = 0.0, somaAlturas = 0.0;
+
+            //Console.WriteLine("Digite a quantidade de alturas a verificar: ");
+            //qtdAlturas  = int.Parse(Console.ReadLine());
+
+            //double[] listaDeAlturas = new double[qtdAlturas];
+
+            //for (int i = 1; i <= qtdAlturas; i++)
             //{
             //    //(i+1) == 0 + 1
             //    //(i+1) == 1 + 1
             //    //(i+1) == 2 + 1
-            //    Console.Write($"\n{(i+1)}º altura: ");
+            //    Console.Write($"\n{(i + 1)}º altura: ");
             //    listaDeAlturas[i] = double.Parse(Console.ReadLine());
 
             //    somaAlturas += listaDeAlturas[i];
@@ -75,46 +78,46 @@ namespace aula_4___Sequencias_listas_e_arrays
             //Em seguida, mostrar a altura
             //média dessas pessoas.
 
-            List<double> listaDeTamanhos = new List<double>();
-            double tamanho = 0.0, somaTamanho = 0.0, media = 0.0;
-            int contador = 0;
+            //List<double> listaDeTamanhos = new List<double>();
+            //double tamanho = 0.0, somaTamanho = 0.0, media = 0.0;
+            //int contador = 0;
 
 
-            while (tamanho != -1)
-            {
-                Console.WriteLine((contador + 1) + "º " + "Tamanho: ");
-                tamanho = double.Parse(Console.ReadLine());
+            //while (tamanho != -1)
+            //{
+            //    Console.WriteLine((contador + 1) + "º " + "Tamanho: ");
+            //    tamanho = double.Parse(Console.ReadLine());
 
-                if (tamanho == -1)
-                    break;
+            //    if (tamanho == -1)
+            //        break;
 
-                listaDeTamanhos.Add(tamanho);
-                //somaTamanho += tamanho;
-                contador++;
-            }
+            //    listaDeTamanhos.Add(tamanho);
+            //    //somaTamanho += tamanho;
+            //    contador++;
+            //}
 
-           
 
-            for (int i = 0; i < listaDeTamanhos.Count; i++)
-            {
-                Console.WriteLine("Tamanho: " + listaDeTamanhos[i]);
-            }
-            // media = somaTamanho / listaDeTamanhos.Count;
-            //listaDeTamanhos[0] = 1.5
-            //listaDeTamanhos[1] = 1.85
-            //listaDeTamanhos.Sum() = 3.35 -> listaDeTamanhos[0] +  listaDeTamanhos[1] 
-            media = listaDeTamanhos.Sum() / listaDeTamanhos.Count;
-            Console.WriteLine($"Media: {media:F3}");
-           
 
-        // List < T > -Tipado
-        //List<string> listaDeNomes = new List<string> { "Alice", "Filipe", "Nuno" };
-        //listaDeNomes.Add("Davide");
-        //Console.WriteLine("List<T>:");
-        //foreach (string nome in listaDeNomes)
-        //{
-        //    Console.WriteLine(nome);
-        //}
+            //for (int i = 0; i < listaDeTamanhos.Count; i++)
+            //{
+            //    Console.WriteLine("Tamanho: " + listaDeTamanhos[i]);
+            //}
+            //// media = somaTamanho / listaDeTamanhos.Count;
+            ////listaDeTamanhos[0] = 1.5
+            ////listaDeTamanhos[1] = 1.85
+            ////listaDeTamanhos.Sum() = 3.35 -> listaDeTamanhos[0] +  listaDeTamanhos[1] 
+            //media = listaDeTamanhos.Sum() / listaDeTamanhos.Count;
+            //Console.WriteLine($"Media: {media:F3}");
+
+
+            // List < T > -Tipado
+            //List<string> listaDeNomes = new List<string> { "Alice", "Filipe", "Nuno" };
+            //listaDeNomes.Add("Davide");
+            //Console.WriteLine("List<T>:");
+            //foreach (string nome in listaDeNomes)
+            //{
+            //    Console.WriteLine(nome);
+            //}
 
             #endregion
 
@@ -283,7 +286,31 @@ namespace aula_4___Sequencias_listas_e_arrays
 
             #endregion
 
-        Console.ReadKey();  
+            //OBJETIVO MEDIA DE ALTURAS
+
+            int qtdAlturas = 0;
+            double media = 0.0, somaAlturas = 0.0;
+
+            Console.WriteLine("Digite a quantidade de alturas a verificar: ");
+            qtdAlturas = int.Parse(Console.ReadLine());
+
+            double[] listaDeAlturas = new double[qtdAlturas];
+
+            for (int i = 0; i < qtdAlturas; i++)
+            {
+                //(i+1) == 0 + 1
+                //(i+1) == 1 + 1
+                //(i+1) == 2 + 1
+                Console.Write((i+1) +"º altura: ");
+                listaDeAlturas[i] = double.Parse(Console.ReadLine());
+
+                somaAlturas += listaDeAlturas[i];
+            }
+            media = somaAlturas / qtdAlturas;
+
+            Console.WriteLine("Media: " + media);
+
+            Console.ReadKey();  
         }
     }
 }

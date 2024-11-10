@@ -152,10 +152,21 @@ namespace Aula_2___Variaveis__tipos_de_dados_e_operadores
             int qtdQuartos, idade, birthday;
             double preco;
 
+            //Console.Write("Nome completo: ");
+            //nome = Console.ReadLine();
+
+            //Console.Write("Idade: ");
+            //idade = int.Parse(Console.ReadLine());
+
             Console.Write("Nome completo: ");
             nome = Console.ReadLine();
 
-            
+            Console.Write("Idade: ");
+            idade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Nome: " + nome);
+            Console.WriteLine("Idade: " + idade);
+
             Console.Write("Quantidade de quartos: ");
             qtdQuartos = int.Parse(Console.ReadLine());
 
